@@ -1,0 +1,358 @@
+/* CSS Variables for Color Scheme */
+:root {
+  --primary-color: #007bff;
+  --hover-primary-color: #0056b3;
+  --secondary-color: #ff8b94;
+  --hover-secondary-color: #f76c6c;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+  --footer-background-color: #023047;
+  --feature-background-start: #eefcff;
+  --feature-background-end: #e0f7fa;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Hero Section with Parallax Effect */
+.hero-section {
+  background-image: url('../public/hero-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 150px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 24px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.explore-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.explore-btn:hover {
+  background-color: var(--hover-secondary-color);
+}
+
+/* Features Section with Grid Layout */
+.features-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.features-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.feature-item {
+  background: linear-gradient(145deg, var(--feature-background-start), var(--feature-background-end));
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* Continue enhancing other sections similarly */
+
+/* Footer */
+.footer {
+  background-color: var(--footer-background-color);
+  color: #fff;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 16px;
+}
+/* Enhance overall aesthetics with smooth scrolling and refined fonts */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Subtle Gradient Background for Body */
+body {
+  background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+}
+
+/* Enhanced Text Shadows and Responsive Typography for Hero Section */
+.hero-section h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: calc(2rem + 1.5vw); /* Responsive font size */
+}
+
+/* Button Enhancements for More Interactive Feedback */
+.explore-btn {
+  position: relative;
+  overflow: hidden; /* Prepares for pseudo-element animation */
+  z-index: 1;
+}
+
+.explore-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.explore-btn:hover::before {
+  left: 100%;
+}
+
+/* Adding a subtle glow effect on hover to feature items */
+.feature-item:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2), 0 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Typography enhancements for content readability */
+h2, h3, p {
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  margin: 2rem 0 1.5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+/* Enhancing Links for Better User Experience */
+a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-primary-color);
+  text-decoration: underline;
+}
+
+/* Styling Enhancements for the Footer */
+.footer {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Enhancing Visual Separation Between Sections */
+.section {
+  margin: 80px 0;
+  padding: 60px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* First section doesn't need top border */
+.section:first-of-type {
+  border-top: none;
+}
+ /* Enhanced Section Styling for Clarity and Modern Aesthetic */
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border: 1px solid #e1e1e1; /* Subtle border for definition */
+  border-radius: 8px; /* Soft rounded corners */
+}
+
+/* The Cycle of Seasons Section Styling */
+.cycle-of-seasons {
+  background-color: #ffffff; /* Slightly off-white for a clean look */
+  border-left: 5px solid var(--primary-color); /* Color accent line */
+}
+
+/* Sustainability and You Section Styling */
+.sustainability-section {
+  background-color: #ffffff;
+  border-left: 5px solid var(--secondary-color); /* Different color accent */
+}
+
+/* Join Our Community Section Styling */
+.join-community {
+  background-color: #ffffff;
+  border-left: 5px solid var(--hover-primary-color); /* Another distinct color accent */
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+  background-color: #ffffff;
+  border-left: 5px solid var(--hover-secondary-color); /* Yet another color accent */
+}
+
+/* Global Styling for Headings, Paragraphs, and Links for Cohesion */
+.section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color); /* Keeping text color consistent for readability */
+}
+
+.section p, .testimonial-quote {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color); /* Slightly muted text for easy reading */
+}
+
+/* Testimonial Quotes Styling for Emphasis */
+.testimonial-quote {
+  background-color: #f9f9f9; /* Light background for the quote box */
+  padding: 1rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--primary-color);
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* Enhancing the Explore Button for Better User Interaction */
+.explore-btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 20px; /* More pronounced rounded corners for a modern look */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-btn:hover {
+  background-color: var(--hover-primary-color);
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Footer Enhancements */
+.footer {
+  background-color: var(--footer-background-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1rem;
+  border-top: 4px solid #d1d1d1; /* Subtle top border for visual separation */
+}
+/* Explore Button Base Styles */
+.explore-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Ensure pseudo-elements are contained */
+  display: inline-block; /* Necessary for positioning pseudo-elements */
+  z-index: 1;
+}
+
+.explore-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+/* Adjusted Button Hover Styles */
+.explore-btn:hover, .explore-btn:focus {
+  background-color: var(--hover-secondary-color);
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Slightly more pronounced shadow */
+}
+
+.explore-btn:hover::before, .explore-btn:focus::before {
+  left: 100%;
+}
+
+/* Ensure the text color remains white on hover for better readability */
+.explore-btn:hover, .explore-btn:focus {
+  color: white;
+}

@@ -1,0 +1,28 @@
+/* SeasonalCalendar.css */
+.suggested-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .suggested-list h3 {
+    margin: 10px 0;
+  }
+  
+  .suggested-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .suggested-list li {
+    cursor: pointer;
+    background-color: #eefcff;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .suggested-list li:hover {
+    background-color: #ddeeff;
+  }
+  

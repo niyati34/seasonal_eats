@@ -1,0 +1,68 @@
+/* src/LoginSignup.css */
+
+.auth-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 40px; /* Increase the padding to add more height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+}
+
+
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #0056b3;
+}
+
+.auth-container p {
+  text-align: center;
+  margin-top: 40px; /* Increase the top margin for better spacing */
+}
+
+.auth-container a {
+  color: #ffffff; /* Change the color to white or a light color */
+  text-decoration: none;
+  font-weight: bold; /* Make the text bold for emphasis */
+  font-size: 20px; /* Increase the font size for better visibility */
+  padding: 10px 20px; /* Add padding for better visibility */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+  transform: translateY(-2px); /* Add a slight upward movement on hover */
+}

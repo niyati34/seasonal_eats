@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(120deg, #d11f3f, #ff615d, #ffa583, #9cffed, #8df9e6, #24fbca, #47ffcc, #42ffc1); /* Gradient with provided colors */
+  border-radius: 12px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff; /* Increase border thickness and adjust color */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* White font color */
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.2rem; /* Increased font size */
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow for pop-up effect */
+}
+
+nav a:hover {
+  background-color: #ffa583; /* Vibrant peach color on hover */
+}
+
+.loginIcon {
+  font-size: 24px;
+  color: #fff; /* White font color */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+  }
+}

@@ -1,0 +1,93 @@
+/* SeasonalItems.css */
+.calendar-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .month {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 220px; /* Adjust based on your preference */
+  }
+  
+  .month h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .item {
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    font-size: 0.95rem;
+  }
+  
+  .item:hover {
+    background-color: #e2e2e2;
+    transform: scale(1.02);
+  }
+  
+  .item:active {
+    background-color: #cacaca;
+  }
+  
+  .item:focus {
+    outline: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .calendar-grid {
+      justify-content: start;
+    }
+  }
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  .items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .item img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .item p {
+    text-align: center;
+  }
+  
+  .item-details {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .item-details img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+  }
+  

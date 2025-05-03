@@ -1,0 +1,59 @@
+.fruit-vegetable-info {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.details {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.details h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.nutritional-facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipes li {
+  margin-bottom: 5px;
+}
+
+.health-benefits,
+.tips-preparation,
+.best-time-to-eat,
+.buying-tips,
+.storage-info,
+.fun-facts {
+  margin-top: 20px;
+}
