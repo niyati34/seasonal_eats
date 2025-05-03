@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 🌱 Seasonal Diet Planning Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A smart diet planner that helps users create nutrition-focused meal plans while ensuring ingredients are seasonally available.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ **Personalized Meal Planning** – Build custom diet plans based on nutritional needs: carbs, protein, fiber.
+- 📆 **Seasonal Ingredient Checker** – Automatically highlights out-of-season fruits/veggies in recipes.
+- 🧠 **Educational Food Info** – Displays images, emojis, and seasonal months for each produce item.
+- 🌿 **Encourages Seasonal Eating** – Promotes sustainable and mindful food choices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+- **Frontend**: React, CSS  
+- **Routing**: `react-router-dom`  
+- **Date Picker**: `react-datepicker`  
+- **Data**: Custom seasonal JSON data  
+- **Images**: Stored in `/public` folder
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📸 Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![seae1](https://github.com/user-attachments/assets/890c820f-f63c-4549-bc9e-ae4b898a0fda)
+![seae2](https://github.com/user-attachments/assets/8b9a38c8-b3a6-4dd5-a51c-e518a3c911a3)
+![seae3](https://github.com/user-attachments/assets/cc8daaf7-286f-4739-936f-f356fe4c08f8)
+![seae4](https://github.com/user-attachments/assets/54aa951e-8333-4b2d-8e8a-54693fd14520)
+![seae5](https://github.com/user-attachments/assets/179fc1dc-62f0-4023-8e97-d8115634a6b5)
+![seae6](https://github.com/user-attachments/assets/f288bb2a-473b-4f9b-a9d6-7ebaf4342ea3)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm start
+```
+---
+## ✨ Goals
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  Promote healthy eating habits by aligning diets with what’s naturally available throughout the year.
+  Avoid the use of out-of-season produce and empower users with awareness.
